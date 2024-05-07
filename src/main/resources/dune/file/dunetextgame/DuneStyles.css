@@ -1,0 +1,11 @@
+#titleButton{
+    -fx-background-color: black;
+    -fx-border-radius: 5;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+#titleLabel{
+    -fx-border-color: white;
+    -fx-border-radius: 15;
+}

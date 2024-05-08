@@ -1,5 +1,9 @@
+#titleButton:hover {
+    -fx-background-color: grey;
+}
+
 #titleButton{
-    -fx-background-color: black;
+    -fx-background-color: transparent;
     -fx-border-radius: 5;
     -fx-border-color: white;
     -fx-text-fill: white;
@@ -9,3 +13,14 @@
     -fx-border-color: white;
     -fx-border-radius: 15;
 }
+
+#titleBackground{
+    /*-fx-background-image: url('DuneBackground.jpg');*/
+    -fx-background-color: radial-gradient(radius 1000%, black, white);
+}
+
+/*@font-face {
+    font-family: 'Dune Rise';
+    src: url('Dune_Rise.ttf');
+}*/
+

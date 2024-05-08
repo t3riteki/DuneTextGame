@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<GridPane alignment="CENTER" prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane fx:id="titleBackground" alignment="CENTER" prefHeight="480.0" prefWidth="640.0" stylesheets="@DuneStyles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dune.file.dunetextgame.SceneController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="370.66668701171875" minWidth="10.0" prefWidth="50.0" />
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="424.6666666666667" minWidth="10.0" prefWidth="388.6666666666667" />
@@ -20,13 +20,16 @@
     <RowConstraints maxHeight="244.66665649414062" minHeight="10.0" prefHeight="173.33331298828122" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <VBox alignment="TOP_CENTER" prefHeight="217.0" prefWidth="393.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <VBox alignment="TOP_CENTER" prefHeight="158.0" prefWidth="425.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <children>
-            <Button fx:id="titleButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="53.0" prefWidth="183.0" stylesheets="@DuneStyles.css" text="START">
+            <Button fx:id="titleButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchDialogueScreen" prefHeight="20.0" prefWidth="150.0" stylesheets="@DuneStyles.css" text="START">
                <font>
                   <Font size="20.0" />
-               </font></Button>
-            <Button fx:id="titleButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="53.0" prefWidth="183.0" stylesheets="@DuneStyles.css" text="EXIT">
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin></Button>
+            <Button fx:id="titleButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#exitProgram" prefHeight="20.0" prefWidth="150.0" stylesheets="@DuneStyles.css" text="EXIT">
                <VBox.margin>
                   <Insets top="30.0" />
                </VBox.margin>
@@ -42,6 +45,9 @@
                <font>
                   <Font name="Wingdings" size="50.0" />
                </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
             </Label>
          </children>
       </VBox>

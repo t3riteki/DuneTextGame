@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<GridPane fx:id="titleBackground" alignment="CENTER" prefHeight="480.0" prefWidth="640.0" stylesheets="@DuneStyles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dune.file.dunetextgame.SceneController">
+<GridPane fx:id="background" alignment="CENTER" prefHeight="480.0" prefWidth="640.0" stylesheets="@DuneStyles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dune.file.dunetextgame.TitleScreenController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="370.66668701171875" minWidth="10.0" prefWidth="50.0" />
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="424.6666666666667" minWidth="10.0" prefWidth="388.6666666666667" />
@@ -29,7 +29,7 @@
                <VBox.margin>
                   <Insets top="30.0" />
                </VBox.margin></Button>
-            <Button fx:id="titleButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#exitProgram" prefHeight="20.0" prefWidth="150.0" stylesheets="@DuneStyles.css" text="EXIT">
+            <Button fx:id="titleButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="20.0" prefWidth="150.0" stylesheets="@DuneStyles.css" text="EXIT">
                <VBox.margin>
                   <Insets top="30.0" />
                </VBox.margin>
@@ -39,7 +39,7 @@
             </Button>
          </children>
       </VBox>
-      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+      <VBox fx:id="bakcground" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" stylesheets="@DuneStyles.css" GridPane.columnIndex="1">
          <children>
             <Label fx:id="titleLabel" alignment="CENTER" prefHeight="115.0" prefWidth="423.0" stylesheets="@DuneStyles.css" text="DUNE: USUL" textFill="WHITE">
                <font>

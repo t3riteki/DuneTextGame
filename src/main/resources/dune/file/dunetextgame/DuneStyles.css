@@ -1,8 +1,8 @@
-#titleButton:hover {
+.button:hover {
     -fx-background-color: grey;
 }
 
-#titleButton{
+.button{
     -fx-background-color: transparent;
     -fx-border-radius: 5;
     -fx-border-color: white;
@@ -14,7 +14,7 @@
     -fx-border-radius: 15;
 }
 
-#titleBackground{
+#background{
     /*-fx-background-image: url('DuneBackground.jpg');*/
     -fx-background-color: radial-gradient(radius 1000%, black, white);
 }

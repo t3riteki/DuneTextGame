@@ -29,7 +29,7 @@
                <VBox.margin>
                   <Insets top="30.0" />
                </VBox.margin></Button>
-            <Button fx:id="titleButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="20.0" prefWidth="150.0" stylesheets="@DuneStyles.css" text="EXIT">
+            <Button fx:id="titleButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#exitProgram" prefHeight="20.0" prefWidth="150.0" stylesheets="@DuneStyles.css" text="EXIT">
                <VBox.margin>
                   <Insets top="30.0" />
                </VBox.margin>

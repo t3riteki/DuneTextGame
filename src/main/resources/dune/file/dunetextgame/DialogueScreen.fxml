@@ -10,12 +10,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.scene.text.TextFlow?>
 <VBox fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" stylesheets="@DuneStyles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dune.file.dunetextgame.DialogueScreenController">
    <children>
       <Pane prefHeight="342.0" prefWidth="640.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
          <children>
             <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchTitleScreen" stylesheets="@DuneStyles.css" text="Back" />
-            <GridPane layoutX="210.0" layoutY="84.0" prefHeight="201.0" prefWidth="221.0">
+            <GridPane fx:id="choiceBox" layoutX="210.0" layoutY="84.0" prefHeight="201.0" prefWidth="221.0">
               <columnConstraints>
                 <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
@@ -63,7 +64,7 @@
             </Label>
          </children>
       </GridPane>
-      <Label fx:id="characterDialogueLabel" alignment="TOP_LEFT" prefHeight="182.0" prefWidth="620.0" style="-fx-background-color: transparent; -fx-border-color: white;" text="Character Dialogue" textFill="WHITE" VBox.vgrow="ALWAYS">
+      <Label fx:id="characterDialogueLabel" alignment="CENTER" prefHeight="182.0" prefWidth="620.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-text-alignment: center;" text="Character Dialogue" textFill="WHITE" VBox.vgrow="ALWAYS">
          <font>
             <Font size="15.0" />
          </font>

@@ -13,6 +13,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -26,6 +27,7 @@ public class DialogueScreenController implements Initializable{
     public Button choice3;
     public Label characterNameLabel;
     public Label characterDialogueLabel;
+    public GridPane choiceBox;
 
     private Stage stage;
     private Scene scene;
@@ -40,7 +42,14 @@ public class DialogueScreenController implements Initializable{
 
 
     public void startGame() throws IOException {
-        story.test1();
+        story.Ascension();
+    }
+
+    public void hideChoiceBox(){
+        choiceBox.setVisible(false);
+    }
+    public void showChoiceBox(){
+        choiceBox.setVisible(true);
     }
 
     public void switchTitleScreen(ActionEvent event) throws IOException {
@@ -49,7 +58,6 @@ public class DialogueScreenController implements Initializable{
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-
     }
 
     public void updateChoices(String c1, String c2, String c3) {
@@ -74,6 +82,7 @@ public class DialogueScreenController implements Initializable{
 
     public void choose1(ActionEvent event){
         story.selectPos(c1);
+        story.EndingValue+=5;
     }
 
     public void choose2(ActionEvent event){
@@ -82,6 +91,7 @@ public class DialogueScreenController implements Initializable{
 
     public void choose3(ActionEvent event){
         story.selectPos(c3);
+        story.EndingValue-=5;
     }
 
 
